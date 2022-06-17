@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #363F9D;
+    overflow-x: hidden;
+    animation: body 6s linear 2s 1;
+}
+
+.cloud{
+    position: absolute;
+    right: -300%;
+    opacity: 0.2;
+    animation: cloud 120s linear infinite;
+}
+
+.thunder{
+    position: absolute;
+    top: -9%;
+    left: 10%;
+    width: 259px;
+    opacity: 0;
+    animation: thunder 1s linear 2;
+
+}
+
+@keyframes cloud {
+    from{
+        right: -50%;
+    }
+    to{
+        right: 600%;
+    }
+}
+
+@keyframes thunder {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.6;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes body {
+    from{
+        background-color: #363F9D;
+    }
+    to{
+        background-color: #000000;
+    }
+    
+}

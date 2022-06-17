@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0 4rem;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    padding: 20px 0;
+}
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left a{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    position: relative;
+}
+
+.right a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 10%;
+    height: 3px;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.right a:hover::before {
+    width: 100%;
+}
+
+/* 
+body{
+    overflow-x: hidden;
+} */
+
+
+/* h1{
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    padding: 20px 0;
+    transition: letter-spacing 1s;
+}
+
+h1:hover {
+    background-color: blueviolet;
+    letter-spacing: 4px;
+    color: cadetblue;
+}
+
+#first{
+    border: 2px solid red;
+    margin-top: 30px;
+    padding: 20px 0;
+    transition: 1s;
+}
+
+#first:hover h3{
+   color: red;
+}
+
+#first:hover{
+    background-color: aqua;
+}
+
+#first h3{
+    transition: 1s;
+} */
+
+/* #demo{
+    width: 35%;
+    margin: 50px;
+    border: 5px solid yellow;
+    overflow: hidden;
+    transition: 1s;
+}
+
+#demo img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#demo:hover{
+    transform: translateZ(20px)
+}
+
+
+
+#first{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: relative;
+}
+
+#second{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%)
+} */
+
+/* #demo{
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(98, 159, 0);
+    border: 5px dashed rgb(233, 122, 4);
+    border-radius: 100%;
+    animation: p324 10s linear infinite;
+}
+
+.hr{
+    width: 500%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    border: 5px dashed blueviolet;
+    animation: hr 3s linear infinite;
+}
+ */
+
+/* @keyframes p324 {
+    from{
+        transform: rotate(0);
+        margin-left: 0;
+    background-color: rgb(98, 159, 0);
+    }
+    to{
+        transform: rotate(360deg);
+        margin-left: 100%;
+    background-color: rgb(98, 159, 0);
+    }
+} */
+
+ /* @keyframes hr {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100px)
+    }
+} */    
+/* 
+ @keyframes p324 {
+   0%{
+    margin-top: 0;
+    margin-left: 0;
+   }
+   25%{
+    margin-top: 0;
+    margin-left: 500px;
+   }
+   50%{
+    margin-top: 300px;
+    margin-left: 500px;
+   }
+   75%{
+    margin-top: 300px;
+    margin-left: 0px;
+   }
+   100%{
+    margin-top: 0;
+    margin-left: 0;
+   }
+} */
+
+/* img{
+    width: 200px;
+    position: absolute;
+    bottom: 18%;
+    left: 40%;
+    transform: translateX(-50%);
+    animation: xelil 1s linear 4s 1;
+
+}
+
+#demo{
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(98, 159, 0);
+    border: 5px dashed rgb(233, 122, 4);
+    border-radius: 100%;
+    animation: p324 4s linear 1;
+}
+
+@keyframes p324 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:  rotate(360deg);
+        margin-left: 16rem;
+    }
+}
+
+@keyframes xelil {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+        left: 90%;
+    }
+}
+
+
+h1{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 70px;
+    color: rgb(158, 13, 13);
+    opacity: 0;
+    animation: text 2s linear 5s infinite;
+}
+
+@keyframes text {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+} */
+
+
+
+#First{
+    background-image: url(https://www.simbrella.com/site/assets/files/1040/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 13rem 0;
+    position: relative;
+    z-index: 2;
+}
+
+#First .first-text {
+    color: #fff;
+}
+
+#First::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.4;
+}
